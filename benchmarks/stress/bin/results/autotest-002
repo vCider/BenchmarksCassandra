@@ -1,0 +1,626 @@
+Activating vCider beta cluster..
+stopping cassandra..
+184.73.130.9
+Stopping Cassandra: Success.
+107.20.220.156
+Stopping Cassandra: Success.
+50.19.51.186
+Stopping Cassandra: Success.
+50.16.56.252
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+184.73.130.9
+107.20.220.156
+50.19.51.186
+50.16.56.252
+updating puppet configs..
+184.73.130.9
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-6-124.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313666976'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-17840-8v6mxz-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}8a8c6620fb58698b5f5ac5295d7143cc'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: Finished catalog run in 3.11 seconds[0m
+107.20.220.156
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-35-52.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313666976'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-20847-1xrlflx-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 2.30 seconds[0m
+50.19.51.186
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-127-90-142.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313666976'[0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-17100-lfll3d-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 2.29 seconds[0m
+50.16.56.252
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-94-69-237.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313666976'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-17423-9r6vrr-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: Finished catalog run in 2.06 seconds[0m
+Displaying Cassandra Ring Status:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               138604875912644250826905106367954536252     
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.29%  11493902070440508389868823908872562293      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         50.42%  97282255354857105203575496349224744569      
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         12.80%  119054516796759459139565805452242395018     
+10.0.0.17       DC1         r1          Up     Normal  8.93 KB         11.49%  138604875912644250826905106367954536252     
+Running Test Case:
+Options: --consistency-level=ALL --replication-factor=3
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+41184,4118,4118,0.012257988539238538,10
+92164,5098,5098,0.010382208709297763,22
+160837,6867,6867,0.0073100927584349015,33
+209552,4871,4871,0.010985158575387458,44
+288245,7869,7869,0.006320409693365356,55
+339203,5095,5095,0.010304544919345343,66
+405889,6668,6668,0.007637675074228474,76
+479949,7406,7406,0.006667499324871725,87
+558934,7898,7898,0.006052174463505729,98
+609199,5026,5026,0.010091674127126232,109
+658820,4962,4962,0.010188468591926805,120
+719048,6022,6022,0.008968635850435013,131
+782108,6306,6306,0.007968855058674278,142
+846057,6394,6394,0.008148368230934025,154
+931959,8590,8590,0.00517358152313101,164
+999154,6719,6719,0.005485542079023737,175
+1000000,84,84,0.001839243498817967,176
+END
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+184.73.130.9
+Stopping Cassandra: Success.
+107.20.220.156
+Stopping Cassandra: Success.
+50.19.51.186
+Stopping Cassandra: Success.
+50.16.56.252
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+184.73.130.9
+107.20.220.156
+50.19.51.186
+50.16.56.252
+updating puppet configs..
+184.73.130.9
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-6-124.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667197'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}8a8c6620fb58698b5f5ac5295d7143cc' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.95 seconds[0m
+107.20.220.156
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-35-52.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667197'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}a5ceb770c95d1a7790d44ff464e37d59' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.91 seconds[0m
+50.19.51.186
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-127-90-142.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667197'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}b17490cf53b048d487ab79ac04848cdb' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: Finished catalog run in 1.98 seconds[0m
+50.16.56.252
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-94-69-237.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667197'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}19a3b472d179205de0804d56b8767e34' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.96 seconds[0m
+Displaying Cassandra Ring Status:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               137965706483887180209808516618546045681     
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         50.51%  53766441319137650999296441991592684083      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         28.03%  101459575028847207501556453052513466022     
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         6.64%   112753924857584943147022915281406396606     
+107.20.220.156  us-east     1d          Up     Normal  8.94 KB         14.82%  137965706483887180209808516618546045681     
+Running Test Case:
+Options: --consistency-level=ALL --replication-factor=3
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+45646,4564,4564,0.011343885554046357,11
+109097,6345,6345,0.008531291863012403,22
+177348,6825,6825,0.007895503362588093,33
+245445,6809,6809,0.006865867806217602,44
+314335,6889,6889,0.00828091159820003,55
+379401,6506,6506,0.008298696707958074,66
+451790,7238,7238,0.007177609857851331,77
+499018,4722,4722,0.011275980350639451,88
+576143,7712,7712,0.006683254457050243,99
+604165,2802,2802,0.013948790236242951,110
+665063,6089,6089,0.011176935203126539,122
+719103,5404,5404,0.009515284974093265,133
+770728,5162,5162,0.010526818401937046,144
+848458,7773,7773,0.005689154766499421,155
+929331,8087,8087,0.005544718261966293,166
+973858,4452,4452,0.0070437711950052774,177
+1000000,2614,2614,0.008664448014689007,187
+END
+Activating vCider beta cluster..
+stopping cassandra..
+184.73.130.9
+Stopping Cassandra: Success.
+107.20.220.156
+Stopping Cassandra: Success.
+50.19.51.186
+Stopping Cassandra: Success.
+50.16.56.252
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+184.73.130.9
+107.20.220.156
+50.19.51.186
+50.16.56.252
+updating puppet configs..
+184.73.130.9
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-6-124.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667419'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}8a8c6620fb58698b5f5ac5295d7143cc'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-19387-112jfay-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.59 seconds[0m
+107.20.220.156
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-35-52.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667419'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}a5ceb770c95d1a7790d44ff464e37d59'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-22153-1q0lwi5-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.26 seconds[0m
+50.19.51.186
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-127-90-142.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667419'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-18415-yj17eq-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}b17490cf53b048d487ab79ac04848cdb'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.06 seconds[0m
+50.16.56.252
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-94-69-237.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667419'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-18724-3avkxg-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}19a3b472d179205de0804d56b8767e34'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.08 seconds[0m
+Displaying Cassandra Ring Status:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               157004240370542634972294709765109331957     
+10.0.0.17       DC1         r1          Up     Normal  8.93 KB         30.16%  38175357151321128454128471088781216159      
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         35.19%  98045131036282928209343978943335756726      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         34.65%  157004240370542634972294709765109331957     
+Running Test Case:
+Options: --consistency-level=ALL --replication-factor=3
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+39571,3957,3957,0.012490915064062066,10
+94164,5459,5459,0.009428388254904475,21
+148176,5401,5401,0.009455991261201214,32
+186562,3838,3838,0.013944979940603345,43
+240122,5356,5356,0.00985362210604929,54
+311837,7171,7171,0.007162657742452764,66
+373523,6168,6168,0.00859407320948027,76
+426957,5343,5343,0.009851442901523375,88
+495186,6822,6822,0.007168857817057263,99
+579340,8415,8415,0.005589835301946432,110
+633213,5387,5387,0.009055797895049468,121
+676391,4317,4317,0.011949534485154477,132
+738266,6187,6187,0.007870286868686868,143
+811264,7299,7299,0.007037384585879066,154
+849537,3827,3827,0.013906121809108248,165
+898811,4927,4927,0.009242724357673418,176
+957220,5840,5840,0.005902686229861836,187
+1000000,4278,4278,0.0053890836839644695,195
+END
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+184.73.130.9
+Stopping Cassandra: Success.
+107.20.220.156
+Stopping Cassandra: Success.
+50.19.51.186
+Stopping Cassandra: Success.
+50.16.56.252
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+184.73.130.9
+107.20.220.156
+50.19.51.186
+50.16.56.252
+updating puppet configs..
+184.73.130.9
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-6-124.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667419'[0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-20217-qk8czp-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 2.56 seconds[0m
+107.20.220.156
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-35-52.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667668'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}a5ceb770c95d1a7790d44ff464e37d59' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.94 seconds[0m
+50.19.51.186
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-127-90-142.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667668'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}b17490cf53b048d487ab79ac04848cdb' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.90 seconds[0m
+50.16.56.252
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-94-69-237.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667668'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-0.8.2' to '/opt/apache-cassandra-2011-08-11_11-00-40'[0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}19a3b472d179205de0804d56b8767e34' to '{md5}9cba45b9b48be75a19e6e0456877c3a8'[0m
+[0;32minfo: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra::ec2multiregion/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}e07cba8f79e593d96a927e19222fe31a' to '{md5}8cd7370b03c8496cbea1774862ce1325'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra::ec2multiregion/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: Finished catalog run in 1.99 seconds[0m
+Displaying Cassandra Ring Status:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         100.00% 99133876512075998594800525605126811812      
+Running Test Case:
+Options: --consistency-level=ALL --replication-factor=3
+Exception in thread "main" java.lang.RuntimeException: java.net.ConnectException: Connection refused
+	at org.apache.cassandra.stress.Session.getClient(Unknown Source)
+	at org.apache.cassandra.stress.Session.createKeySpaces(Unknown Source)
+	at org.apache.cassandra.stress.StressAction.run(Unknown Source)
+	at org.apache.cassandra.stress.Stress.main(Unknown Source)
+Activating vCider beta cluster..
+stopping cassandra..
+184.73.130.9
+Stopping Cassandra: Success.
+107.20.220.156
+Stopping Cassandra: Success.
+50.19.51.186
+Stopping Cassandra: Success.
+50.16.56.252
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+184.73.130.9
+107.20.220.156
+50.19.51.186
+50.16.56.252
+updating puppet configs..
+184.73.130.9
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-6-124.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667693'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-20962-102vbtf-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: Finished catalog run in 2.20 seconds[0m
+107.20.220.156
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-120-35-52.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667693'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}a5ceb770c95d1a7790d44ff464e37d59'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-23493-1nhf3ug-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.21 seconds[0m
+50.19.51.186
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-127-90-142.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667693'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}b17490cf53b048d487ab79ac04848cdb'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-19747-1h05zub-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.52 seconds[0m
+50.16.56.252
+[0;32minfo: Retrieving plugin[0m
+[1;35merr: /File[/var/lib/puppet/lib]: Failed to retrieve current state of resource: Could not retrieve information from source(s) puppet://puppet/plugins[0m
+[0;32minfo: Caching catalog for ip-10-94-69-237.ec2.internal[0m
+[0;32minfo: Applying configuration version '1313667693'[0m
+[0;36mnotice: //cassandra/Exec[jre_noninteractive]/returns: executed successfully[0m
+[0;32minfo: //cassandra/File[/opt/cassandra]: Recursively backing up to filebucket[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra]/target: target changed '/opt/apache-cassandra-2011-08-11_11-00-40' to '/opt/apache-cassandra-0.8.2'[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]/checksum: checksum changed '{md5}9cba45b9b48be75a19e6e0456877c3a8' to '{md5}19a3b472d179205de0804d56b8767e34'[0m
+[0;32minfo: //cassandra/File[/opt/cassandra/conf/cassandra.yaml]: Scheduling refresh of Service[cassandra][0m
+[0;36mnotice: //cassandra/Service[cassandra]/ensure: ensure changed 'stopped' to 'running'[0m
+[0;36mnotice: //cassandra/Service[cassandra]: Triggering 'refresh' from 1 dependencies[0m
+[0;36mnotice: //cassandra/File[/opt/cassandra/conf/cassandra-topology.properties]/checksum: checksum changed '{md5}8cd7370b03c8496cbea1774862ce1325' to '{md5}e07cba8f79e593d96a927e19222fe31a'[0m
+[0;36mnotice: //vcider::beta/Package[vcider]/ensure: ensure changed 'purged' to 'present'[0m
+[0;32minfo: //vcider::beta/Package[vcider]: Scheduling refresh of Exec[replace_module][0m
+Binary files /usr/sbin/vcider-nmd and /tmp/puppet-diffing20110818-20060-qvhsg9-0 differ
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/checksum: checksum changed '{md5}11f5989e330333fd4820f0c676823cd8' to '{md5}053167562fac54c7be473e8b57f615e7'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Filebucketed /usr/sbin/vcider-nmd to puppet with sum 053167562fac54c7be473e8b57f615e7[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/content: content changed '{md5}053167562fac54c7be473e8b57f615e7' to '{md5}11f5989e330333fd4820f0c676823cd8'[0m
+[0;36mnotice: //vcider::beta/File[/usr/sbin/vcider-nmd]/mode: mode changed '755' to '644'[0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/File[/usr/sbin/vcider-nmd]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[replace_module]: Triggering 'refresh' from 1 dependencies[0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;32minfo: //vcider::beta/Exec[replace_module]: Scheduling refresh of Exec[restart_vcider][0m
+[0;36mnotice: //vcider::beta/Exec[restart_vcider]: Triggering 'refresh' from 5 dependencies[0m
+[0;36mnotice: Finished catalog run in 3.44 seconds[0m
+Displaying Cassandra Ring Status:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               162326505739761999300455629343855780107     
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         10.51%  10069059392610403258757639326997880635      
+10.0.0.17       DC1         r1          Up     Normal  8.93 KB         67.70%  125254537830339259682887202438659005702     
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         3.56%   131314065949817185935642860693875314133     
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         18.23%  162326505739761999300455629343855780107     
+Running Test Case:
+Options: --consistency-level=ALL --replication-factor=3
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+47775,4777,4777,0.010641214024071166,11
+86011,3823,3823,0.014184276597970499,22
+148329,6231,6231,0.008057928688340448,33
+206591,5826,5826,0.00921638460746284,44
+271589,6499,6499,0.007702960091079725,55
+320903,4931,4931,0.01035059009611875,66

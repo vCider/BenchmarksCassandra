@@ -1,0 +1,109 @@
+
+###################################################################
+# EC2 Multi Region Cassandra  Cluster Example Configuration       #
+##################################################################
+#
+# Initial Tokens are set for 8 nodes cluster. 
+# Uses OpenVPN for Cassandra Nodes  <=> Client configuration 
+
+node basenode {
+  include vcider
+  include cassandra
+}
+
+
+node 'HOSTNAME-1' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address	   = "0.0.0.0"
+  $encryption	   = none
+  $initial_token   = 0
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_" 
+  include openvpn::client
+}
+
+node 'HOSTNAME-2' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "__EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052864
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+node 'HOSTNAME-3' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052864
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+node 'HOSTNAME-4' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 127605887595351923798765477786913079296
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+#Client
+#Doubles as VPN Server. Provide this hostname as _VPN_SERVER_HOSTNAME_
+node 'HOSTNAME-CLIENT' {
+  include openvpn::server
+}
+
+node 'HOSTNAME-6' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 1
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+node 'HOSTNAME-7' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052865
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+node 'HOSTNAME-8' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052865
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+node 'HOSTNAME-9' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 127605887595351923798765477786913079297
+  include cassandra::ec2multiregion
+  $vpn_server      = "_VPN_SERVER_HOSTNAME_"
+  include openvpn::client
+}
+
+

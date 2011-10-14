@@ -1,0 +1,4 @@
+update keyspace Keyspace1
+    with placement_strategy = 'org.apache.cassandra.locator.NetworkTopologyStrategy'
+
+

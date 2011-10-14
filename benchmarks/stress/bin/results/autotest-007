@@ -1,0 +1,380 @@
+Activating vCider beta cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  8.91 KB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+83767,8376,8376,0.004933625413348932,11
+210753,12698,12698,0.0033827744790764338,22
+296164,8541,8541,0.003941904438538361,33
+401217,10505,10505,0.0024070136026577062,44
+509949,10873,10873,0.0028065610859728508,55
+573659,6371,6371,0.007077476063412337,66
+693570,11991,11991,0.0031793830424231306,77
+821329,12775,12775,0.0025489632824302008,88
+957008,13567,13567,0.002766316084287178,99
+1000000,4299,4299,0.002217598622999628,103
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  41.45 MB        25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  41.5 MB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  30.5 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  30.5 KB         25.00%  127605887595351923798765477786913079296     
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  8.93 KB         25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+78556,7855,7855,0.006208131778603798,10
+172209,9365,9365,0.004000822184019733,22
+281154,10894,10894,0.0034095002065262286,33
+409562,12840,12840,0.0023568936514858888,44
+528018,11845,11845,0.002790901262916188,55
+667723,13970,13970,0.0022919437385920333,66
+769377,10165,10165,0.004225126409191965,77
+902580,13320,13320,0.002397896443773789,88
+1000000,9742,9742,0.0021077396838431535,97
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  26.83 MB        25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  26.63 MB        25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  26.86 MB        25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  120.42 MB       25.00%  127605887595351923798765477786913079296     
+Activating vCider beta cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  8.91 KB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+79422,7942,7942,0.00411204703986301,11
+184537,10511,10511,0.0031323693098035486,22
+269815,8527,8527,0.004280670278383639,33
+389313,11949,11949,0.002298799979915982,44
+506832,11751,11751,0.0025570333307805546,55
+574819,6798,6798,0.0068282612852457085,66
+684143,10932,10932,0.002498024221579891,77
+795936,11179,11179,0.0025328956195826216,88
+912581,11664,11664,0.0027660079729092545,99
+1000000,8741,8741,0.0026862810144247817,108
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  41.4 MB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  41.4 MB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  41.41 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  30.5 KB         25.00%  127605887595351923798765477786913079296     
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  8.93 KB         25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+78964,7896,7896,0.005588926599463046,11
+173173,9420,9420,0.004213907376153021,22
+263410,9023,9023,0.004454746944158161,33
+382990,11958,11958,0.0025678457936109717,44
+518806,13581,13581,0.0023735421452553453,55
+648555,12974,12974,0.0024320341582594086,66
+705621,5706,5706,0.006855342936249256,77
+807832,10221,10221,0.004326921759888858,88
+954485,14665,14665,0.002420605101839035,99
+1000000,4551,4551,0.002004174447984181,104
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  95.76 MB        25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  26.49 MB        25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  27.07 MB        25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  120.2 MB        25.00%  127605887595351923798765477786913079296     
+Activating vCider beta cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  8.91 KB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+80978,8097,8097,0.0048059225962607125,11
+184007,10302,10302,0.0029902163468537983,22
+263898,7989,7989,0.0040292273222265335,33
+387433,12353,12353,0.00259441453838993,44
+501461,11402,11402,0.002537622338373031,55
+529660,2819,2819,0.016953083442675272,66
+667961,13830,13830,0.002568058076225045,77
+781333,11337,11337,0.002479898034788131,88
+912935,13160,13160,0.0026303551617756567,99
+1000000,8706,8706,0.0026724171595934073,109
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  41.55 MB        25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  41.43 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  41.46 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  30.5 KB         25.00%  127605887595351923798765477786913079296     
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  8.93 KB         25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+70975,7097,7097,0.006346798168369144,10
+173500,10252,10252,0.0038011509387954156,22
+268915,9541,9541,0.00444517109469161,33
+396654,12773,12773,0.0023491494375249534,43
+523290,12663,12663,0.0025222606525790456,54
+646623,12333,12333,0.0030461028273049387,66
+696112,4948,4948,0.005168138374184162,77
+832350,13623,13623,0.004768185087860949,88
+963263,13091,13091,0.002167256116657628,99
+1000000,3673,3673,0.001913221003348123,102
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  27.46 MB        25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  25.31 MB        25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  25.12 MB        25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  105.99 MB       25.00%  127605887595351923798765477786913079296     
+Activating vCider beta cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  8.91 KB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+81585,8158,8158,0.00423604829319115,11
+189932,10834,10834,0.003030817650696374,22
+263697,7376,7376,0.0034842404934589577,33
+338895,7519,7519,0.006372642889438549,44
+454180,11528,11528,0.002768937849676888,55
+535386,8120,8120,0.004881966849740167,66
+632098,9671,9671,0.0035059041277194143,77
+762940,13084,13084,0.002520513290839333,88
+890372,12743,12743,0.0025763544478623894,99
+1000000,10962,10962,0.00247895610610428,109
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  41.42 MB        25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  41.56 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  41.53 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  30.5 KB         25.00%  127605887595351923798765477786913079296     
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  8.93 KB         25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+69774,6977,6977,0.00713737208702382,11
+159252,8947,8947,0.00438197098728179,22
+263046,10379,10379,0.0035160895620170722,33
+380773,11772,11772,0.0027245491688397735,44
+517885,13711,13711,0.00241497461928934,55
+646855,12897,12897,0.0024657904939133133,66
+729041,8218,8218,0.004871620470639769,77
+872934,14389,14389,0.003102986246724997,88
+999491,12655,12655,0.00222378058898362,99
+1000000,50,50,0.0011768172888015718,99
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  26.54 MB        25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  27.46 MB        25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  27.18 MB        25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  67.14 MB        25.00%  127605887595351923798765477786913079296     
+Activating vCider beta cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  8.91 KB         25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  8.93 KB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  8.93 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  8.93 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+86284,8628,8628,0.003896017801678179,11
+188704,10242,10241,0.0029269380980277288,22
+267715,7901,7901,0.004316816645783498,33
+387485,11977,11977,0.002589972447190448,43
+524125,13664,13664,0.0030850117096018737,54
+579954,5582,5582,0.008362696806319297,65
+704191,12423,12423,0.0025722932781699495,76
+835144,13095,13095,0.002721900223744397,87
+957307,12216,12216,0.0027090526591521166,98
+1000000,4269,4269,0.0023399620546693837,103
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         r1          Up     Normal  41.53 MB        25.00%  0                                           
+10.0.0.18       DC1         r1          Up     Normal  41.44 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         r1          Up     Normal  30.5 KB         25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         r1          Up     Normal  30.5 KB         25.00%  127605887595351923798765477786913079296     
+Activating Ec2MultiRegionSnitch cluster..
+stopping cassandra..
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+Stopping Cassandra: Success.
+cleaning up  cassandra files..
+updating puppet configs..
+starting cassandra..
+Ring Status before Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  8.93 KB         25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  8.94 KB         25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  8.94 KB         25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  8.94 KB         25.00%  127605887595351923798765477786913079296     
+Running Test Case:
+Options: 
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+72651,7265,7265,0.0060760209769996285,11
+170235,9758,9758,0.004019890555828825,22
+265344,9510,9510,0.0036597482888054756,33
+395382,13003,13003,0.0023786047155446867,44
+520313,12493,12493,0.00241530925070639,55
+652710,13239,13239,0.002486649999622348,66
+746062,9335,9335,0.004491387436798355,77
+878281,13221,13221,0.00291286426307868,88
+978380,10009,10009,0.0027608967122548676,99
+1000000,2162,2162,0.0017583256244218316,101
+END
+Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+107.20.220.156  us-east     1d          Up     Normal  26.58 MB        25.00%  0                                           
+50.19.51.186    us-east     1d          Up     Normal  27.31 MB        25.00%  42535295865117307932921825928971026432      
+50.16.56.252    us-east     1d          Up     Normal  27.25 MB        25.00%  85070591730234615865843651857942052864      
+184.73.130.9    us-east     1d          Up     Normal  119.68 MB       25.00%  127605887595351923798765477786913079296     
+DONE

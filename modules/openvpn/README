@@ -1,0 +1,43 @@
+This module installs and configures OpenVPN for remote access. 
+
+The Configs used are, 
+
+1. UDP Port 1194
+2. Encryption Enabled
+3. Client-to-client communication enabled. 
+
+Setting up Certificate Authority (CA) and generating certificates and keys for an OpenVPN server anclients (IMPORTANT IN ORDER TO USE THIS MODULE)
+
+- here is the howto for generating server and client certificates, keys etc. 
+http://openvpn.net/index.php/open-source/documentation/howto.html#pki
+
+- You will need to create server and client keys etc. in order to use this module and place it in the appropriate locations. 
+
+- Client Keys should be copied to /modules/openvpn/files/client/openvpn. The files which need to be copied are,
+ client1.crt
+ client1.key
+ ca.crt
+ 
+- Server Keys need to be copied to  /modules/openvpn/files/server/openvpn/easy-rsa/2.0/keys. Following are the files required.  Its recommended to copy the entire keys dir to this location. 
+ ca.key
+ ca.crt
+ dh1024.pem
+ server.csr
+ server.key
+ server.crt
+
+PUPPET NODE CONFIGURATIONS: 
+
+For Server:
+
+		node 'SERVER_HOSTNAME' {
+		   include openvpn::server
+		}
+
+For Clients:
+
+		node 'CLIENT_HOSTNAME' {
+		  $vpn_server      = "SERVER_HOSTNAME"
+		  include openvpn::client
+		}
+

@@ -1,0 +1,141 @@
+The following steps were used to setup Puppet to run a Cassandra cluster
+on a vCider virtual network.
+
+
+1) Register for a vCider account at:
+       http://www.vcider.com/free-registration 
+
+2) If you are using Amazon EC2, launch instances with AMIs certified by
+   vCider. To view the supported AMIs list:
+
+       a) Login to vCider console at https://my.vcider.com
+       b) Go to Download page
+       c) From Supported Platforms, choose the "Click here to see a list
+          of AMI/AKIs" link.
+
+   For the remainder of this example, we will use AMI ami-3202f25b.
+3) Start 3 EC2 instances using the command:
+
+       % ec2-run-instances ami-3202f25b --instance-type t1.micro \
+       --region us-east-1 --key ec2-keypair-east
+
+   or use the Amazon EC2 web portal to launch 3 instances using 
+   ami-3202f25b.
+
+4) Using the Amazon EC2 web interface or the EC2 command line tools, 
+   modify the security group used by the instances to open
+   the ports required by Puppet, vCider and ssh.
+
+           Type Port  Source
+   Puppet: TCP  8140  0.0.0.0/0
+   SSH:    TCP    22  0.0.0.0/0
+   vCider: UDP  8002  0.0.0.0/0
+
+5) Start configuring the instance 1 as the Puppet Master:
+
+       a) Log in as user ubuntu and then become root using
+	  
+          % sudo su -
+
+	Note: The following steps require that they be run as the root
+	user and not just with sudo elevated privileges.
+
+	b) Install the following packages using commands: 
+
+	  # apt-get update
+          # apt-get install puppet facter puppetmaster git-core -yq
+
+	c) Clone the git repository by using following commands:
+
+ 	  # cd /etc/puppet/ && rm -rf *
+	  # git clone git@github.com:vCider/BenchmarksCassandra.git .
+
+	d) Download the "Account Token" from your vCider account and
+           save it as /etc/puppet/modules/vcider/files/account.key
+
+        Note: the account token file account.key should include the
+        "-----BEGIN VCIDER ACCOUNT TOKEN-----" and 
+        "-----BEGIN VCIDER ACCOUNT TOKEN-----" strings.  
+
+        e.g.  
+
+-----BEGIN VCIDER ACCOUNT TOKEN-----
+Yzo+uWmoutsrtedboSwJhYaWtByPoIuufxeQeLlqi8scrpiS
+g6taoNfcczo+u1r+sWe7EwYwefwefwEOcQgGdZmf0H+UBKwf
+7JA5gGvOHC98UMfT23ffeew2ZeSL+Z5wUpFb7wHsK45SBQLh0
+r2u5lwefBerjiQtAapnMiEaiL5GF81hk1y+cGetkUgfrrBcY+
+asdfhjkl13w3v4A2NBeHyW1oMnzCiODzdmkVai2yKaB5fpAw
+VIWHgnk6vk/pxf1dfX9mw/O0x5ypWc3KLj+iQQ+luQ1jIrPp
+j1aupHJH/jI= 
+-----END VCIDER ACCOUNT TOKEN-----
+
+	e) Restart Puppet Master twice (yes twice!) using the commands:
+
+	  # /etc/init.d/puppetmaster restart
+	  # /etc/init.d/puppetmaster restart 
+
+6) Now start configuring instances 2 and 3 (Cassandra nodes 1 and 2) 
+   as follows:
+
+	a) Log into each node as user ubuntu and then become root using:
+	   % sudo su -
+
+	b) Install the following packages using commands: 
+
+	  # apt-get update
+          # apt-get install puppet facter -yq
+
+	c) Edit the file /etc/hosts and add "xxx.xxx.xxx.xxx puppet"
+	   where xxx.xxx.xxx.xxx is the private IP of the Puppet Master
+	   node. Eg:
+
+           107.20.77.101   puppet
+
+	d) Run the command: 
+
+           # puppetd --test
+
+7) Returning to instance 1, the Puppet Master, follow the steps below:
+
+	a) Find the hostname of both client nodes using the following 
+           command:
+
+	  # puppetca --list --all
+
+	   and put them in the file /etc/puppet/manifests/nodes.pp where 
+           the name HOSTNAME exists currently. 
+
+           e.g. Insert domu-12-31-39-03-29-24.compute-1.internal 
+           replacing HOSTNAME in the following:
+
+	node 'HOSTNAME'{
+		$seed_host = "192.168.1.1"
+		$vcider_address = "192.168.1.1"
+		$initial_token   = 0
+		include vcider
+		include cassandra
+	}
+
+           The hostname of each client should be listed. You do not need
+           to remove any extra entries from this file.
+
+8) Now shifting back to instances 2 and 3 (Cassandra nodes 1 and 2) run 
+   the following command:
+
+	a) puppetd --test
+
+9) Log into the vCider web console (http://my.vcider.com) and create a
+   network with the network address space 192.168.2.0/24. Then add both
+   nodes to this network. The nodes should automatically be assigned
+   virtual addresses 192.168.2.1 and 192.168.2.2.
+
+10) Now shifting back to Node 1 and 2 (Cassandra nodes 1 and 2) run 
+   the following command:
+
+   # puppetd --test
+   # /etc/init.d/cassandra start
+   # # Verify status of cassandra ring:
+   # /opt/cassandra/bin/nodetool -h localhost ring 
+
+Cassandra should now be up and running using the vCider virtual network!
+

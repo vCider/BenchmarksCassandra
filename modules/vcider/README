@@ -1,0 +1,47 @@
+This puppet module does the following, 
+ - installs vcider module. Currently supports  and tested on Ubuntu 10.04 LTS Server. 
+ - manages the vcider key configurations 
+ - manages vcider-nmd daemon 
+
+Assumptions: 
+
+This documents assumes that, 
+1. You have puppet installed on the vcider node and a puppet server running. 
+2. You have signed up for a vcider account at http://www.vcider.com/free-registration and have access to "Account Token". 
+3. You have git client installed. 
+
+SETUP INSTRUCTIONS: 
+
+1. If you are using Amazon EC2, launch a instance with AMI certified by vcider. To get the list, 
+     i. Login to vcider console at https://my.vcider.com
+    ii. Go to Help page
+   iii. Choose "download and install instructions" link
+    iv. From Supported Platforms, choose "Click here to see a list of AMI/AKIs" link. 
+   
+2. Download the git repository. 
+   e.g. git clone git@github.com:menlo/Puppet.git
+
+3. Download the "Accoutn Token" from the vcider account and save it as "account.key"  inside modules/vcider/files
+   Please note, account token should include -----BEGIN VCIDER ACCOUNT TOKEN----- and -----BEGIN VCIDER ACCOUNT TOKEN-----
+   e.g. 
+   -----BEGIN VCIDER ACCOUNT TOKEN-----
+   AzE+6WxoPtLr9e7bJSQJuYSWxBbPCIkuWxjQrLYq08fcfpjS
+   86UabNzc1zp+Y1e+KWE7EwYwefwefwEOcQgGdZmf0H+UBKwf
+   3MA5gGvOHC98UMfT23ffeew2ZeSL+Z5wUpFb7wHsK45SBQLh0
+   k2w58wefwe4j8QqAipGMvELiL5GF81hk1y+cGetkUgfrrBcY+
+   sdfsdiZV13w3v4A2NBeHyW1oMnzCiODzdmkVai2yKaB5fpAw
+   VIWHgnk6vk/pxf1dfX9mw/O0x5ypWc3KUj+iQQ+luQ1jIrPp
+   E1aupHJH/jI=
+   -----END VCIDER ACCOUNT TOKEN-----
+
+   *** For vcider module to work, you must have valid account token in /modules/vcider/account.key 
+
+4. Once account toke is saved, add the node configs for the nodes. 
+
+  node 'ip-10-xx-xx-xx'{
+  include vcider
+  }
+
+
+
+

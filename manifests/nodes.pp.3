@@ -1,0 +1,93 @@
+
+###################################################################
+# EC2 Multi Region Cassandra  Cluster Example Configuration       #
+##################################################################
+#
+# Initial Tokens are set for 8 nodes cluster. 
+# Internode Encryption = OFF
+# Openvpn   = OFF
+
+
+node basenode {
+  include vcider
+  include cassandra
+}
+
+
+node 'HOSTNAME-1' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address	   = "0.0.0.0"
+  $encryption	   = none
+  $initial_token   = 0
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-2' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "__EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052864
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-3' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052864
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-4' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 127605887595351923798765477786913079296
+  include cassandra::ec2multiregion
+}
+
+#Client
+node 'HOSTNAME_CLIENT' {
+}
+
+node 'HOSTNAME-6' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 1
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-7' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052865
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-8' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 85070591730234615865843651857942052865
+  include cassandra::ec2multiregion
+}
+
+node 'HOSTNAME-9' {
+  $seed_host       = "_PUBLIC_HOSTNAME_OF_SEED_HOST_"
+  $listen_address  = "_EC2_PRIVATE_IP_"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = none
+  $initial_token   = 127605887595351923798765477786913079297
+  include cassandra::ec2multiregion
+}
+
+

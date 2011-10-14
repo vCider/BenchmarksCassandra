@@ -1,0 +1,1067 @@
+======================================================================================
+ITERATION 1
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003165194,97
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  121.01 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  79.84 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  81.09 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  81.4 MB         25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+85153,8515,8515,0.003707009735417425,11
+128766,4361,4361,0.006027308371357164,22
+157012,2824,2824,0.02532535580259152,33
+273519,11650,11650,0.0024781601105512974,44
+322445,4892,4892,0.0034113354862445326,55
+440567,11812,11812,0.005234579502548213,66
+550369,10980,10980,0.002691271561538041,77
+604025,5365,5365,0.008372390785746236,88
+732323,12829,12829,0.0027112815476468847,99
+827601,9527,9527,0.0038594428934276537,110
+927081,9948,9948,0.004369400884599919,121
+1000000,7291,7291,0.0024265692069282353,129
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  428.77 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  433.6 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  422.13 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  404.62 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002968492,95
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  81.41 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  79.32 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  92.13 MB        25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  66.15 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+87900,8790,8790,0.003569442548350398,11
+119336,3143,3143,0.010443345209314163,22
+164485,4514,4514,0.014971693725220935,33
+294977,13049,13049,0.001824763203874567,44
+335951,4097,4097,0.0030410016107775663,55
+Operation [337239] retried 1 times - error inserting key 0337239 ((TimedOutException))
+
+Operation [337263] retried 1 times - error inserting key 0337263 ((TimedOutException))
+
+Operation [337306] retried 1 times - error inserting key 0337306 ((TimedOutException))
+
+Operation [337298] retried 1 times - error inserting key 0337298 ((TimedOutException))
+
+Operation [337275] retried 1 times - error inserting key 0337275 ((TimedOutException))
+
+Operation [337305] retried 1 times - error inserting key 0337305 ((TimedOutException))
+
+Operation [337260] retried 1 times - error inserting key 0337260 ((TimedOutException))
+
+Operation [337300] retried 1 times - error inserting key 0337300 ((TimedOutException))
+
+Operation [337284] retried 1 times - error inserting key 0337284 ((TimedOutException))
+
+Operation [337244] retried 1 times - error inserting key 0337244 ((TimedOutException))
+
+Operation [337287] retried 1 times - error inserting key 0337287 ((TimedOutException))
+
+Operation [337271] retried 1 times - error inserting key 0337271 ((TimedOutException))
+
+Operation [337330] retried 1 times - error inserting key 0337330 ((TimedOutException))
+
+Operation [337316] retried 1 times - error inserting key 0337316 ((TimedOutException))
+
+Operation [337322] retried 1 times - error inserting key 0337322 ((TimedOutException))
+
+Operation [337293] retried 1 times - error inserting key 0337293 ((TimedOutException))
+
+Operation [337324] retried 1 times - error inserting key 0337324 ((TimedOutException))
+
+Operation [337327] retried 1 times - error inserting key 0337327 ((TimedOutException))
+
+Operation [337308] retried 1 times - error inserting key 0337308 ((TimedOutException))
+
+Operation [337319] retried 1 times - error inserting key 0337319 ((TimedOutException))
+
+Operation [337340] retried 1 times - error inserting key 0337340 ((TimedOutException))
+
+Operation [337269] retried 1 times - error inserting key 0337269 ((TimedOutException))
+
+Operation [337315] retried 1 times - error inserting key 0337315 ((TimedOutException))
+
+Operation [337302] retried 1 times - error inserting key 0337302 ((TimedOutException))
+
+Operation [337320] retried 1 times - error inserting key 0337320 ((TimedOutException))
+
+Operation [337347] retried 1 times - error inserting key 0337347 ((TimedOutException))
+
+Operation [337326] retried 1 times - error inserting key 0337326 ((TimedOutException))
+
+Operation [337344] retried 1 times - error inserting key 0337344 ((TimedOutException))
+
+Operation [337343] retried 1 times - error inserting key 0337343 ((TimedOutException))
+
+Operation [337342] retried 1 times - error inserting key 0337342 ((TimedOutException))
+
+Operation [337359] retried 1 times - error inserting key 0337359 ((TimedOutException))
+
+Operation [337353] retried 1 times - error inserting key 0337353 ((TimedOutException))
+
+337430,147,147,0.461446923597025,66
+Operation [337235] retried 1 times - error inserting key 0337235 ((TimedOutException))
+
+Operation [337247] retried 1 times - error inserting key 0337247 ((TimedOutException))
+
+Operation [337248] retried 1 times - error inserting key 0337248 ((TimedOutException))
+
+Operation [337246] retried 1 times - error inserting key 0337246 ((TimedOutException))
+
+Operation [337245] retried 1 times - error inserting key 0337245 ((TimedOutException))
+
+Operation [337243] retried 1 times - error inserting key 0337243 ((TimedOutException))
+
+399473,6204,6204,0.010460954499298873,77
+527443,12797,12797,0.0019650074236149096,88
+619018,9157,9157,0.003348938028938029,99
+774406,15538,15538,0.0025250083661544007,110
+781012,660,660,0.020027853466545564,122
+Operation [780787] retried 1 times - error inserting key 0780787 ((TimedOutException))
+
+Operation [780789] retried 1 times - error inserting key 0780789 ((TimedOutException))
+
+Operation [780726] retried 1 times - error inserting key 0780726 ((TimedOutException))
+
+Operation [780772] retried 1 times - error inserting key 0780772 ((TimedOutException))
+
+Operation [780795] retried 1 times - error inserting key 0780795 ((TimedOutException))
+
+Operation [780798] retried 1 times - error inserting key 0780798 ((TimedOutException))
+
+Operation [780804] retried 1 times - error inserting key 0780804 ((TimedOutException))
+
+Operation [780823] retried 1 times - error inserting key 0780823 ((TimedOutException))
+
+Operation [780839] retried 1 times - error inserting key 0780839 ((TimedOutException))
+
+Operation [780849] retried 1 times - error inserting key 0780849 ((TimedOutException))
+
+Operation [780738] retried 1 times - error inserting key 0780738 ((TimedOutException))
+
+Operation [780911] retried 1 times - error inserting key 0780911 ((TimedOutException))
+
+Operation [780781] retried 1 times - error inserting key 0780781 ((TimedOutException))
+
+Operation [780731] retried 1 times - error inserting key 0780731 ((TimedOutException))
+
+Operation [780902] retried 1 times - error inserting key 0780902 ((TimedOutException))
+
+Operation [780887] retried 1 times - error inserting key 0780887 ((TimedOutException))
+
+Operation [780855] retried 1 times - error inserting key 0780855 ((TimedOutException))
+
+Operation [780885] retried 1 times - error inserting key 0780885 ((TimedOutException))
+
+907543,12653,12653,0.006204827275529317,133
+1000000,9245,9245,0.002254193841461436,141
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  362.7 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  384.76 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  468.98 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  440.44 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 2
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002839027,94
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  67.85 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  68.77 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  94.54 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  68.53 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+97909,9790,9790,0.003020488412709761,11
+164608,6669,6669,0.006138832666156914,22
+222520,5791,5791,0.007710612653681448,33
+337839,11531,11531,0.0026330700058099705,44
+430357,9251,9251,0.00391321688752459,55
+552345,12198,12198,0.002541864773584287,66
+605529,5318,5318,0.007774067388688327,77
+703539,9801,9801,0.0035435669829609225,88
+827788,12424,12424,0.0026917077803443085,99
+896345,6855,6855,0.006435564566710912,110
+1000000,10365,10365,0.0027212580193912497,120
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  365.62 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  393.25 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  363.19 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  408.74 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002729066,95
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  68.07 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  67.02 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  123.66 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  95.7 MB         25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+105314,10531,10531,0.0026249026720094196,11
+180932,7561,7561,0.005065870559919596,22
+308128,12719,12719,0.001864728450580207,33
+385219,7709,7709,0.004421073795903543,44
+493700,10848,10848,0.0025768106857422036,55
+608371,11467,11467,0.0021106557019647514,66
+705515,9714,9714,0.0027931318455077,77
+835704,13018,13018,0.0019337808877862184,88
+921629,8592,8592,0.0035372243235379693,99
+1000000,7837,7837,0.0019463704686682574,106
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  339.33 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  364.65 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  456.97 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  380.85 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 3
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003036202,100
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  81.08 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  120.71 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  67.99 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  81.28 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+92786,9278,9278,0.0032967581316146835,11
+174293,8150,8150,0.004557927539965892,22
+293099,11880,11880,0.002571191690655354,33
+368218,7511,7511,0.005157869513704921,44
+483190,11497,11497,0.002588604181887764,55
+589150,10596,10596,0.0026731408078520197,66
+684311,9516,9516,0.0041802419058227635,77
+779468,9515,9515,0.0036420652185335813,88
+878343,9887,9887,0.004529820480404552,99
+997184,11884,11884,0.002860898174872308,110
+1000000,281,281,0.001578125,110
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  351.23 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  437.25 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  328.11 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  337.12 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002742849,95
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  65.9 MB         25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  66.19 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  118.73 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  106.28 MB       25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+87606,8760,8760,0.004318676802958702,11
+148918,6131,6131,0.006326347207724426,22
+278162,12924,12924,0.0019581411903067066,33
+338925,6076,6076,0.007115827065813077,44
+455518,11659,11659,0.002163534689046512,55
+542077,8655,8655,0.004209799096569969,66
+644802,10272,10272,0.00379436359211487,77
+774298,12949,12949,0.002378158398715018,88
+833480,5918,5918,0.0055132303741002335,99
+947350,11387,11387,0.005748546588214631,110
+1000000,5265,5265,0.0037219183285849954,118
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  479.52 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  395.53 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  435.57 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  435.22 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 4
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003038546,99
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  79.53 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  77.76 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  130.28 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  119.31 MB       25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+87659,8765,8765,0.0044526061214478834,11
+192116,10445,10445,0.003166805479766794,22
+272166,8005,8005,0.005364722048719551,33
+363566,9140,9140,0.004007910284463895,44
+479597,11603,11603,0.0025465522144944024,55
+571662,9206,9206,0.00407489273882583,65
+703355,13169,13169,0.0027215341741778226,76
+807477,10412,10412,0.0038297477958548626,87
+943998,13652,13652,0.0025593644933746456,99
+999919,5592,5592,0.006288925448400422,110
+1000000,8,8,0.001493827160493827,110
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  452.78 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  571.84 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  614.76 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  523.72 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003489739,110
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  93.42 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  81.26 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  93.67 MB        25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  80.17 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+78339,7833,7833,0.004011309820140671,11
+140201,6186,6186,0.0016007403575700753,22
+256873,11667,11667,0.005046017896324739,33
+356006,9913,9913,0.0036365186164042246,44
+473879,11787,11787,0.002779550872549269,55
+594436,12055,12055,0.0020340502832684954,66
+718848,12441,12441,0.0028562437706973606,77
+814708,9586,9586,0.0041725119966617985,88
+957651,14294,14294,0.002538627285001714,99
+1000000,4234,4234,0.0019406361425299298,103
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  431.1 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  475.86 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  445.58 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  520.57 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 5
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003281002,105
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  81.94 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  81.53 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  94.77 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  95.1 MB         25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+89674,8967,8967,0.003677621161094632,11
+158867,6919,6919,0.0024772448080008095,22
+266751,10788,10788,0.005293620926179971,33
+351895,8514,8514,0.0030398383914309875,44
+413482,6158,6158,0.00842734668030591,55
+507582,9410,9410,0.004248905419766206,66
+620905,11332,11332,0.002585450438128182,77
+743376,12247,12247,0.002964228266283447,88
+830027,8665,8665,0.00431297965401438,99
+938957,10893,10893,0.002996190213898834,110
+1000000,6104,6104,0.002412676310142031,116
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  390.34 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  427.74 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  345.42 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  407.71 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003388025,105
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  93.93 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  78.42 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  123.57 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  78.83 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+81235,8123,8123,0.0033988428632978395,11
+122902,4166,4166,0.011962008303933569,22
+186827,6392,6392,0.004563488463042628,33
+298571,11174,11174,0.003067574097938144,44
+385206,8663,8663,0.003541605586656663,55
+517875,13266,13266,0.0021514445725828945,66
+554257,3638,3638,0.012440932329173766,77
+673014,11875,11875,0.002678208442449708,88
+813593,14057,14057,0.002644342327090106,99
+Operation [813515] retried 1 times - error inserting key 0813515 ((TimedOutException))
+
+Operation [813508] retried 1 times - error inserting key 0813508 ((TimedOutException))
+
+Operation [813564] retried 1 times - error inserting key 0813564 ((TimedOutException))
+
+Operation [813571] retried 1 times - error inserting key 0813571 ((TimedOutException))
+
+Operation [813553] retried 1 times - error inserting key 0813553 ((TimedOutException))
+
+Operation [813636] retried 1 times - error inserting key 0813636 ((TimedOutException))
+
+Operation [813613] retried 1 times - error inserting key 0813613 ((TimedOutException))
+
+Operation [813579] retried 1 times - error inserting key 0813579 ((TimedOutException))
+
+Operation [813575] retried 1 times - error inserting key 0813575 ((TimedOutException))
+
+841223,2763,2763,0.02004020991675715,110
+963689,12246,12246,0.0022147371515359366,121
+1000000,3631,3631,0.008955770978491366,129
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  369.23 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  412.5 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  396.96 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  457.69 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 6
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003277945,103
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  80.26 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  93.75 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  67.02 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  66.48 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+67821,6782,6782,0.004084339658807744,11
+113922,4610,4610,0.01113461747033687,22
+207263,9334,9334,0.0038936908753923784,33
+325860,11859,11859,0.002447220418728973,44
+381355,5549,5549,0.007748247589872962,55
+468979,8762,8762,0.004611350771478134,66
+553888,8490,8490,0.004209541980237666,77
+650018,9613,9613,0.00365261624882971,88
+717453,6743,6743,0.006196174093571588,99
+825804,10835,10835,0.0032875746416738193,110
+953284,12748,12748,0.0026557499215563224,121
+1000000,4671,4671,0.0027444130490624197,126
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  388.64 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  420.8 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  411.32 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  485.42 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002822988,103
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  92.54 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  79.96 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  80.44 MB        25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  80.71 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+111069,11106,11107,0.002522945196229371,11
+186232,7516,7516,0.004623099131221478,22
+311790,12555,12555,0.002082073623345386,33
+398139,8634,8634,0.0036571819013538082,44
+516575,11843,11843,0.0024760123611064205,55
+596981,8040,8040,0.0021508220779543814,66
+685969,8898,8898,0.006685395783701173,77
+787683,10171,10171,0.002379800224157933,88
+866060,7837,7837,0.005732919096163415,99
+993422,12736,12736,0.0029535889825850724,110
+1000000,657,657,0.001886743691091517,110
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  436.62 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  423.81 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  352.34 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  501.08 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 7
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003175533,101
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  67.96 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  121.57 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  100.14 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  67.37 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+62224,6222,6222,0.0033984314733864745,11
+88554,2633,2633,0.025036346372958602,22
+182327,9377,9377,0.003956480010237488,33
+298159,11583,11583,0.0024339388079287244,44
+341698,4353,4353,0.0029551896001286204,55
+Operation [341744] retried 1 times - error inserting key 0341744 ((TimedOutException))
+
+Operation [341716] retried 1 times - error inserting key 0341716 ((TimedOutException))
+
+Operation [341714] retried 1 times - error inserting key 0341714 ((TimedOutException))
+
+Operation [341688] retried 1 times - error inserting key 0341688 ((TimedOutException))
+
+Operation [341668] retried 1 times - error inserting key 0341668 ((TimedOutException))
+
+Operation [341667] retried 1 times - error inserting key 0341667 ((TimedOutException))
+
+Operation [341645] retried 1 times - error inserting key 0341645 ((TimedOutException))
+
+Operation [341635] retried 1 times - error inserting key 0341635 ((TimedOutException))
+
+Operation [341633] retried 1 times - error inserting key 0341633 ((TimedOutException))
+
+Operation [341631] retried 1 times - error inserting key 0341631 ((TimedOutException))
+
+Operation [341629] retried 1 times - error inserting key 0341629 ((TimedOutException))
+
+Operation [341703] retried 1 times - error inserting key 0341703 ((TimedOutException))
+
+406975,6527,6527,0.011191369088652972,66
+511429,10445,10445,0.0031508319451624637,77
+609235,9780,9780,0.0034454327955340163,88
+712744,10350,10350,0.0034197219565448413,99
+768034,5529,5529,0.006733496111412552,110
+839511,7147,7147,0.007491137009107825,121
+949591,11008,11008,0.0031681958575581395,132
+1000000,5040,5040,0.002400424527366145,137
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  468.45 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  369.16 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  453.14 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  422.45 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003017715,98
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  103.9 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  103.98 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  117.23 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  68.86 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+54348,5434,5434,0.005517461544123059,11
+143781,8943,8943,0.004120794337660595,22
+270525,12674,12674,0.002121702013507543,33
+380699,11017,11017,0.002417829978034745,44
+500070,11937,11937,0.0020085029027150647,55
+611380,11131,11131,0.004023969095319378,66
+734722,12334,12334,0.002984595677060531,77
+835984,10126,10126,0.004784944006636251,88
+967000,13101,13101,0.002653332417414667,99
+1000000,3300,3300,0.0017832121212121212,102
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  431.4 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  550.09 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  480.93 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  489.55 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 8
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003107255,99
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  121.22 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  95.07 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  67.78 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  67.06 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+90654,9065,9065,0.003027268515454365,11
+184062,9340,9340,0.00370581748886605,22
+299264,11520,11520,0.00264241940244093,33
+327492,2822,2822,0.003079708091256908,44
+412449,8495,8495,0.009031698388596585,55
+534290,12184,12184,0.002618921381144278,66
+620102,8581,8581,0.004143756118025451,77
+734889,11478,11478,0.0026248007178513244,88
+813283,7839,7839,0.005285748909355308,99
+935596,12231,12231,0.002583879064367647,110
+1000000,6440,6440,0.0024467579653437675,116
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  486.24 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  409.12 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  384.22 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  370.81 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.002679131,102
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  107.5 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  67.95 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  81.14 MB        25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  67.2 MB         25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+109461,10946,10946,0.0023860735787175342,11
+180066,7060,7060,0.004975724098859854,22
+294319,11425,11425,0.002242496914741845,33
+412019,11770,11770,0.002237068819031436,44
+524555,11253,11253,0.003150654012938082,55
+611808,8725,8725,0.0030010887877780705,66
+773488,16168,16168,0.0026593827313211283,77
+912661,13917,13917,0.002533307466247045,88
+1000000,8733,8733,0.0019369010407721636,95
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  518.49 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  445.89 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  416.82 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  414.26 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 9
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003290529,99
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  66.6 MB         25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  92.36 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  122.81 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  130.68 MB       25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+69727,6972,6972,0.004374919328237268,11
+146943,7721,7721,0.004871425611272275,22
+238568,9162,9162,0.0041776916780354705,33
+330904,9233,9233,0.002775753768844221,44
+438551,10764,10764,0.0037893299395245572,55
+561269,12271,12271,0.0026900128750468556,66
+670166,10889,10889,0.0033904239786220008,77
+779314,10914,10914,0.002591243082786675,88
+836070,5675,5675,0.009328670096553669,99
+931813,9574,9574,0.003893966138516654,110
+1000000,6818,6818,0.004134937744731401,119
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  397.72 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  393.17 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  517.36 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  464 MB          25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003208598,106
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  68.65 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  81.98 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  82.4 MB         25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  106.76 MB       25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+96762,9676,9676,0.002858901221553916,11
+174931,7816,7816,0.0038270286174826337,22
+292121,11719,11719,0.002285647239525557,33
+378182,8606,8606,0.0040676729296661674,44
+497415,11923,11923,0.0018204020698967568,55
+597515,10010,10010,0.002773916083916084,66
+687208,8969,8969,0.005568182578350596,77
+816015,12880,12880,0.002962292421995699,88
+865211,4919,4919,0.009763395397999837,99
+1000000,13478,13478,0.0020700650646566115,109
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  328.49 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  414.8 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  411.12 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  468.68 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+ITERATION 10
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.004367598,118
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  95.01 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  54.29 MB        25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  52.08 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  65.98 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+70348,7034,7034,0.0047523454824586345,11
+128671,5832,5832,0.008248684052603605,22
+223752,9508,9508,0.0036812717577644326,33
+329487,10573,10573,0.00286202298198326,44
+397195,6770,6770,0.005951024989661487,55
+503529,10633,10633,0.0037468636560272347,66
+556033,5250,5250,0.00822150693280512,77
+601376,4534,4534,0.004946099728734314,88
+714712,11333,11333,0.0053754852826992305,99
+812969,9825,9825,0.0038100186246272532,110
+924875,11190,11190,0.0027910031633692563,121
+970060,4518,4518,0.009515348013721368,132
+1000000,2994,2994,0.002546392785571142,137
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  377.34 MB       25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  469.77 MB       25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  383.91 MB       25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  341.35 MB       25.00%  127605887595351923798765477786913079296     
+I: Activating Ec2 Native cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I: starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+1000000,1000,1000,0.003117258,101
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  82.89 MB        25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  69.04 MB        25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  96.31 MB        25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  114.46 MB       25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options:--consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+81159,8115,8115,0.0038340787836222724,11
+157351,7619,7619,0.003895120222595548,22
+201929,4457,4457,0.01152990264255911,33
+320497,11856,11856,0.002020713851966804,44
+398887,7839,7839,0.004277484373006761,55
+418904,2001,2001,0.025874606584403256,66
+454803,3589,3589,0.01169770745703223,77
+567219,11241,11241,0.0028032753344719614,88
+645143,7792,7792,0.003204250295159386,99
+759310,11416,11416,0.004582523846645703,110
+876575,11726,11726,0.0038456316889097343,121
+974879,9830,9830,0.0033010457356770833,132
+1000000,2512,2512,0.002369929541021456,135
+END
+I: sleeping for one minute..
+I: Ring Status after Test Run:
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.120.35.52    DC1         RAC1        Up     Normal  415.26 MB       25.00%  0                                           
+10.120.6.124    DC1         RAC1        Up     Normal  371.95 MB       25.00%  42535295865117307932921825928971026432      
+10.127.90.142   DC1         RAC1        Up     Normal  475.37 MB       25.00%  85070591730234615865843651857942052864      
+10.94.69.237    DC1         RAC1        Up     Normal  424.42 MB       25.00%  127605887595351923798765477786913079296     
+======================================================================================
+======================================================================================
+RESULTS SUMMARY
+======================================================================================
+TEST PARAMETERS: --consistency-level=ALL --replication-factor=1 --column-size=128 -k
+Total elapsed times for vCider Cluster:
+Iteration 1:  129 seconds
+Iteration 2:  120 seconds
+Iteration 3:  110 seconds
+Iteration 4:  110 seconds
+Iteration 5:  116 seconds
+Iteration 6:  126 seconds
+Iteration 7:  137 seconds
+Iteration 8:  116 seconds
+Iteration 9:  119 seconds
+Iteration 10:  137 seconds
+Total elapsed times for EC2MultiRegionSnitch Cluster:
+Iteration 1:  141 seconds
+Iteration 2:  106 seconds
+Iteration 3:  118 seconds
+Iteration 4:  103 seconds
+Iteration 5:  129 seconds
+Iteration 6:  110 seconds
+Iteration 7:  102 seconds
+Iteration 8:  95 seconds
+Iteration 9:  109 seconds
+Iteration 10:  135 seconds
+======================================================================================
+DONE

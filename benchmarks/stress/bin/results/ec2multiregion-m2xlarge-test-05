@@ -1,0 +1,104 @@
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+30874,3087,3087,0.015934605169398198,11
+49629,1875,1875,0.029042815249266864,22
+91556,4192,4192,0.012158060438380995,33
+124696,3314,3314,0.014016928183464093,44
+152838,2814,2814,0.0228186340700732,55
+195035,4219,4219,0.01188639002772709,66
+231487,3645,3645,0.015947355426314057,77
+258681,2719,2719,0.019757961314995954,88
+293050,3436,3436,0.01579755011783875,99
+312768,1971,1971,0.02398047469317375,110
+341760,2899,2899,0.019870136589403974,121
+364612,2285,2285,0.025017503938386136,132
+390041,2542,2542,0.020778559911911597,143
+421458,3141,3141,0.013597319922335042,154
+464011,4255,4255,0.015684534580405612,165
+491891,2788,2788,0.01992083931133429,176
+532539,4064,4064,0.01294663944105491,187
+559376,2683,2683,0.02015974214703581,198
+596898,3752,3752,0.014765764085070092,209
+643852,4695,4695,0.011324125740086042,220
+683317,3946,3946,0.012316685670847587,231
+717844,3452,3452,0.012199032641121441,242
+759277,4143,4143,0.017122679989380444,253
+796119,3684,3684,0.013028527224363498,264
+826433,3031,3031,0.02008867190077192,275
+866347,3991,3991,0.0106458134990229,286
+878195,1184,1184,0.005149392302498312,297
+878195,0,0,NaN,308
+878195,0,0,NaN,319
+878195,0,0,NaN,330
+878195,0,0,NaN,342
+878195,0,0,NaN,353
+878195,0,0,NaN,364
+878195,0,0,NaN,375
+878195,0,0,NaN,386
+Operation [878220] retried 10 times - error inserting key 0878220 ((TimedOutException))
+
+Operation [878148] retried 10 times - error inserting key 0878148 ((TimedOutException))
+
+Operation [878212] retried 10 times - error inserting key 0878212 ((TimedOutException))
+
+Operation [878227] retried 10 times - error inserting key 0878227 ((TimedOutException))
+
+Operation [878152] retried 10 times - error inserting key 0878152 ((TimedOutException))
+
+Operation [878211] retried 10 times - error inserting key 0878211 ((TimedOutException))
+
+Operation [878175] retried 10 times - error inserting key 0878175 ((TimedOutException))
+
+Operation [878225] retried 10 times - error inserting key 0878225 ((TimedOutException))
+
+Operation [878157] retried 10 times - error inserting key 0878157 ((TimedOutException))
+
+Operation [878183] retried 10 times - error inserting key 0878183 ((TimedOutException))
+
+Operation [878184] retried 10 times - error inserting key 0878184 ((TimedOutException))
+
+Operation [878189] retried 10 times - error inserting key 0878189 ((TimedOutException))
+
+Operation [878210] retried 10 times - error inserting key 0878210 ((TimedOutException))
+
+Operation [878163] retried 10 times - error inserting key 0878163 ((TimedOutException))
+
+Operation [878161] retried 10 times - error inserting key 0878161 ((TimedOutException))
+
+Operation [878165] retried 10 times - error inserting key 0878165 ((TimedOutException))
+
+Operation [878218] retried 10 times - error inserting key 0878218 ((TimedOutException))
+
+Operation [878168] retried 10 times - error inserting key 0878168 ((TimedOutException))
+
+Operation [878162] retried 10 times - error inserting key 0878162 ((TimedOutException))
+
+Operation [878202] retried 10 times - error inserting key 0878202 ((TimedOutException))
+
+Operation [878215] retried 10 times - error inserting key 0878215 ((TimedOutException))
+
+Operation [878201] retried 10 times - error inserting key 0878201 ((TimedOutException))
+
+Operation [878166] retried 10 times - error inserting key 0878166 ((TimedOutException))
+
+Operation [878226] retried 10 times - error inserting key 0878226 ((TimedOutException))
+
+Operation [878156] retried 10 times - error inserting key 0878156 ((TimedOutException))
+
+Operation [878169] retried 10 times - error inserting key 0878169 ((TimedOutException))
+
+Operation [878195] retried 10 times - error inserting key 0878195 ((TimedOutException))
+
+Operation [878219] retried 10 times - error inserting key 0878219 ((TimedOutException))
+
+Operation [878208] retried 10 times - error inserting key 0878208 ((TimedOutException))
+
+Operation [878216] retried 10 times - error inserting key 0878216 ((TimedOutException))
+
+Operation [878194] retried 10 times - error inserting key 0878194 ((TimedOutException))
+
+Operation [878224] retried 10 times - error inserting key 0878224 ((TimedOutException))
+
+Operation [878222] retried 10 times - error inserting key 0878222 ((TimedOutException))
+
+878195,0,0,NaN,388
+END

@@ -1,0 +1,45 @@
+======================================================================================
+ITERATION 1
+======================================================================================
+I: Activating vCider beta cluster..
+I: stopping cassandra..
+I: cleaning up  cassandra files..
+I: updating puppet configs..
+I starting cassandra..
+I: sleeping for one minute..
+I: Running preTEST run with default options..
+Created keyspaces. Sleeping 4s for propagation.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+74265,7426,7426,0.006171830606611459,11
+168937,9467,9467,0.003594357360148724,22
+265966,9702,9702,0.003589895804347154,33
+393638,12767,12767,0.002211416755435804,43
+523080,12944,12944,0.002245770306392052,54
+668283,14520,14520,0.0022843260814170508,65
+748149,7986,7986,0.005390666867002228,76
+887480,13933,13933,0.0024134040522209702,87
+1000000,11252,11252,0.002021045147529328,97
+END
+I: Completed running preTEST, sleeping for 30 seconds
+I: Ring status after preTEST
+Address         DC          Rack        Status State   Load            Owns    Token                                       
+                                                                               127605887595351923798765477786913079296     
+10.0.0.17       DC1         RAC1        Up     Normal  67.86 MB        25.00%  0                                           
+10.0.0.18       DC1         RAC1        Up     Normal  81.5 MB         25.00%  42535295865117307932921825928971026432      
+10.0.0.19       DC1         RAC1        Up     Normal  68.08 MB        25.00%  85070591730234615865843651857942052864      
+10.0.0.20       DC1         RAC1        Up     Normal  81.18 MB        25.00%  127605887595351923798765477786913079296     
+I: Running Test Case with Options: --consistency-level=ALL --replication-factor=1 --column-size=2048
+Unable to create stress keyspace: Keyspace already exists.
+total,interval_op_rate,interval_key_rate,avg_latency,elapsed_time
+20446,2044,2044,0.006471094590628974,11
+50126,2968,2968,0.021437567385444743,22
+84064,3393,3393,0.018865931993635454,33
+102434,1837,1837,0.022657430593358736,44
+103605,117,117,0.2641947053800171,55
+130872,2726,2726,0.032882788718964315,66
+160784,2991,2991,0.016506318534367476,77
+169924,914,914,0.05836345733041576,88
+199482,2955,2955,0.017564821706475404,99
+217165,1768,1768,0.026524119210541198,110
+232706,1554,1554,0.03354861334534457,121
+239958,725,725,0.0428030888030888,132

@@ -1,0 +1,25 @@
+    dev tun
+    client
+    proto udp
+    remote <%= vpn_server %> 1194
+    resolv-retry infinite
+    nobind
+    user nobody
+    group nogroup
+
+    # Try to preserve some state across restarts.
+    persist-key
+    persist-tun
+    ca ca.crt
+    cert client1.crt
+    key client1.key
+
+    comp-lzo
+    cipher AES-256-CBC
+
+    # Set log file verbosity.
+    verb 3
+
+    ping 10
+    ping-restart 60 
+

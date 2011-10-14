@@ -1,0 +1,20 @@
+
+This directory contains the example configurations for the different ways Cassandra cluster can bset up. 
+
+nodes.pp.2     		: Cassandra Cluster with Vcider Virtual Network (http://www.vcider.com/)
+nodes.pp.3     		: Cassandra Cluster Setup With Amazon EC2 Multi Region Setup. No internode encryption. Uses EC2Snitch. 
+nodes.pp.4     	 	: Cassandra Cluster Setup With Amazon EC2 Multi Region Setup. Internode encryption enabled. Uses EC2Snitch.
+nodes.openvpn.pp.1  	: Cassandra Cluster Setup With Amazon EC2 Multi Region Setup. No internode encryption. Uses EC2Snitch. 
+			  Uses OpenVPN for nodes <=> client communcation.  
+nodes.openvpn.pp.1      : Cassandra Cluster Setup With Amazon EC2 Multi Region Setup. No internode encryption. Uses EC2Snitch.
+                          Uses OpenVPN for nodes <=> client communcation. 
+
+By default nodes.pp is a copy of nodes.pp.2. 
+
+To configure your Cassandra Cluster, 
+ - Choose Appropriate Configuration Set Above
+ - Update the configurations in the file. e.g IP Addres, Seed Host etc. 
+ - Copy the file as nodes.pp 
+     e.g. cp nodes.pp.4 nodes.pp
+ - Puppet will automatically pick up nodes.pp 
+

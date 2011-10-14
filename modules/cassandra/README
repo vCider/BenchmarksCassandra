@@ -1,0 +1,45 @@
+
+
+EXAMPLE NODE CONFIGURATIONS: 
+
+#With Vcider Virtual Network Module (http://www.vcider.com/). Recommended Setup. 
+node 'HOSTNAME'{
+  $seed_host = "Vcider_virtual_address_of_seed_host"
+  $vcider_address = "vcider_virtual_address_of_node"
+  $initial_token   = 1
+  include vcider
+  include cassandra
+}
+
+# With amazon EC2 Multi Region Setup
+
+node 'HOSTNAME' {
+  $seed_host       = "Public_ip_of_seed_host"
+  $listen_address  = "Private_ip_of_ec2_instance"
+  $rpc_address     = "0.0.0.0"
+  $encryption      = all
+  $initial_token   = 21267647932558653966460912964485513216
+  include cassandra::ec2multiregion
+}
+
+SETTING UP CASSANDRA INTER-NODE ENCRYPTION (CREATING KEYSTORE AND TRUSTSTORE)
+  - You need keystore and truststore to setup Cassandra Encryption
+  - Use the following guide to create keystore and truststore
+    http://download.oracle.com/javase/6/docs/technotes/guides/security/jsse/JSSERefGuide.html#CreateKeystore
+  - Copy keystore and truststore to modules/cassandra/files/cert/
+  - Puppet recipies will automatically copy the keystore and trust store to appropriate location.
+
+GENERATING INITIAL TOKENS: 
+
+To Generate Initial Tokens, use the script generate_initial_tokens.py which is provided in this directory. 
+Provide number of nodes in the cassandra cluster as argument. 
+
+e.g. 
+
+./generate_initial_tokens.py 4
+node 0: 0
+node 1: 42535295865117307932921825928971026432
+node 2: 85070591730234615865843651857942052864
+node 3: 127605887595351923798765477786913079296
+
+use the above tokens to specify  initial_token in the cassandra node configs. 
